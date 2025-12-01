@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Adolescentes</title>
+  </head>
+
+  <body class="bg-gray-100 min-h-screen flex flex-col">
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+      <div
+        class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <a
+          href="index.html"
+          class="flex items-center space-x-2 text-xl font-semibold"
+        >
+          <img
+            src="assets/icon.webp"
+            alt="Logo"
+            class="h-12 w-12 object-contain"
+          />
+          <span>Projeto + Emoções</span>
+        </a>
+
+        <!-- Botão mobile -->
+        <button id="menuBtn" class="md:hidden text-3xl">☰</button>
+
+        <!-- MENU DESKTOP -->
+        <ul class="hidden md:flex space-x-6 relative">
+          <!-- Quem Somos -->
+          <li class="group relative">
+            <a href="quem-somos.html" class="hover:text-blue-600">Quem Somos</a>
+            <ul
+              class="absolute hidden group-hover:block bg-white shadow-md px-4 py-2 space-y-2 w-40"
+            >
+              <li>
+                <a href="quem-somos.html#equipa" class="hover:text-blue-600"
+                  >Equipa</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- Adolescentes -->
+          <li class="group relative">
+            <a href="adolescentes.html" class="hover:text-blue-600"
+              >Adolescentes</a
+            >
+            <ul
+              class="absolute hidden group-hover:block bg-white shadow-md px-4 py-2 space-y-2 w-48"
+            >
+              <li>
+                <a
+                  href="adolescentes.html#ComoDefinirAadolescencia"
+                  class="hover:text-blue-600"
+                  >Como definir a adolescência</a
+                >
+              </li>
+              <li>
+                <a
+                  href="adolescentes.html#processosCognitivos"
+                  class="hover:text-blue-600"
+                  >Processos cognitivos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="adolescentes.html#identidadeVSconfusao"
+                  class="hover:text-blue-600"
+                  >Identidade vs Confusão</a
+                >
+              </li>
+              <li>
+                <a
+                  href="adolescentes.html#CerebroDosAdolescentes"
+                  class="hover:text-blue-600"
+                  >Cérebro dos adolescentes</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- Estratégias -->
+          <li class="group relative">
+            <a href="estrategias.html" class="hover:text-blue-600"
+              >Estratégias</a
+            >
+            <ul
+              class="absolute hidden group-hover:block bg-white shadow-md px-4 py-2 space-y-2 w-48"
+            >
+              <li>
+                <a
+                  href="estrategias.html#parentaisAdaptativas"
+                  class="hover:text-blue-600"
+                  >Parentais adaptativas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="estrategias.html#parentaisDesadaptativas"
+                  class="hover:text-blue-600"
+                  >Parentais desadaptativas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="estrategias.html#recomendadas"
+                  class="hover:text-blue-600"
+                  >Recomendadas</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- Contactos -->
+          <li class="group relative">
+            <a href="contactos.html" class="hover:text-blue-600">Contactos</a>
+            <ul
+              class="absolute hidden group-hover:block bg-white shadow-md px-4 py-2 space-y-2 w-48"
+            >
+              <li>
+                <a href="contactos.html#formulario" class="hover:text-blue-600"
+                  >Formulário</a
+                >
+              </li>
+              <li>
+                <a href="contactos.html#psicologos" class="hover:text-blue-600"
+                  >Psicólogos</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- MENU MOBILE -->
+      <ul
+        id="mobileMenu"
+        class="md:hidden hidden flex-col bg-white shadow-md p-4 space-y-4"
+      >
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="adolescentes.html">Adolescentes</a></li>
+        <li><a href="estrategias.html">Estratégias</a></li>
+        <li><a href="contactos.html">Contactos</a></li>
+      </ul>
+    </nav>
+
+    <!-- MAIN CONTENT OF THE PAGE -->
+    <main class="flex-grow pt-20">
+      <!-- SECÇÃO 1 – Imagem à esquerda / texto à direita — sem fundo -->
+      <section id="ComoDefinirAadolescencia" class="py-16 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <!-- Imagem -->
+          <img
+            src="assets/image_4.jpeg"
+            class="rounded-xl shadow-lg w-full object-cover"
+          />
+
+          <!-- Texto formatado -->
+          <div>
+            <h2 class="text-3xl font-semibold mb-6">
+              Como Definir a Adolescência
+            </h2>
+
+            <p class="text-lg leading-relaxed mb-4">
+              Antes considerava-se que a infância acabava quando se estivesse
+              pronto para reproduzir, e aí começava a adultez. A adolescência é
+              uma
+              <span class="font-semibold"
+                >etapa de transição entre a infância e a idade adulta</span
+              >, cuja delimitação cronológica é ambígua, situando-se geralmente
+              entre os 12-13 anos e o final da segunda década de vida.
+            </p>
+
+            <p class="text-lg leading-relaxed mb-4">
+              Este período inicia-se com a maturação biológica e estende-se até
+              que o indivíduo atinja um
+              <span class="font-semibold">estado de autossuficiência</span>, tal
+              como a sociedade o define. Caracteriza-se pelo início dos
+              relacionamentos românticos, pela formação de identidade e por
+              significativas mudanças físicas.
+            </p>
+
+            <p class="text-lg leading-relaxed mb-4">
+              Apesar disso, existe pouca unanimidade quanto ao início e fim
+              desta fase, uma vez que envolve um conjunto complexo de
+              <span class="font-semibold">processos psicológicos e sociais</span
+              >.
+            </p>
+
+            <div class="bg-gray-100 p-4 rounded-lg mb-4">
+              <p class="text-lg leading-relaxed">
+                Durante este período, os adolescentes passam por tarefas
+                desenvolvimentais importantes, como:
+              </p>
+              <ul class="list-disc ml-6 text-lg leading-relaxed mt-2">
+                <li>Aceitação do próprio corpo</li>
+                <li>Desenvolvimento de competências cognitivas</li>
+                <li>Construção de valores éticos e morais</li>
+                <li>Estabelecimento de relações mais maduras</li>
+                <li>Construção da identidade</li>
+              </ul>
+            </div>
+
+            <p class="text-lg leading-relaxed">
+              É também um período marcado por mudanças sociais: muitos continuam
+              dependentes da família, encontram-se em contexto escolar e vivem a
+              transição para uma maior autonomia emocional, social e relacional.
+            </p>
+
+            <p class="text-lg leading-relaxed mb-4">
+              Os adolescentes encontram-se ainda na escola ou em outros
+              contextos de formação; permanecem muitas vezes dependentes dos
+              pais ou a viver com eles. Estão a realizar a
+              <span class="font-semibold"
+                >transição de um sistema de vinculação centrado na família</span
+              >
+              para um sistema mais orientado para os pares e, mais tarde, para
+              relações de intimidade.
+            </p>
+
+            <p class="text-lg leading-relaxed mb-4">
+              Sentem-se parte de uma
+              <span class="font-semibold">cultura de idade</span>, com as suas
+              próprias modas, hábitos, estilos de vida e valores. Trazem consigo
+              preocupações e inquietações que já não pertencem à infância, mas
+              que ainda não coincidem com as dos adultos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECÇÃO 2 -->
+      <section id="processosCognitivos" class="py-16 px-4 bg-blue-50">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <!-- TEXTO -->
+          <div class="order-2 md:order-1">
+            <h3 class="text-2xl font-semibold mb-6">Processos Cognitivos</h3>
+
+            <p class="text-lg leading-relaxed mb-6">
+              Alguma vez tiveram curiosidade sobre os processos cognitivos dos
+              adolescentes? Elkind procurou explicar alguns fenómenos
+              característicos desta etapa do desenvolvimento:
+            </p>
+
+            <ul class="space-y-4 text-lg leading-relaxed">
+              <li>
+                <span class="font-semibold text-blue-700"
+                  >• Audiência imaginária:</span
+                >
+                Excessiva autoconsciência que leva o adolescente a acreditar que
+                todos reparam, observam e julgam os seus comportamentos tanto
+                quanto ele próprio.
+              </li>
+
+              <li>
+                <span class="font-semibold text-blue-700"
+                  >• Fábula pessoal:</span
+                >
+                Crença de que as suas experiências são únicas e especiais, o que
+                pode levar à sensação de invulnerabilidade ou excecionalidade.
+              </li>
+
+              <li>
+                <span class="font-semibold text-blue-700"
+                  >• Pseudo-estupidez:</span
+                >
+                Capacidade de pensar em múltiplas possibilidades e motivos
+                complexos para situações simples, o que paradoxalmente resulta
+                em decisões que podem parecer “estúpidas”.
+              </li>
+
+              <li>
+                <span class="font-semibold text-blue-700"
+                  >• Hipocrisia aparente:</span
+                >
+                O adolescente pode acreditar que não tem de respeitar regras que
+                considera absolutamente essenciais para os outros.
+              </li>
+            </ul>
+          </div>
+
+          <img
+            src="assets/image_5.jpeg"
+            class="order-1 md:order-2 rounded-xl shadow-lg w-full object-cover"
+          />
+        </div>
+      </section>
+
+      <!-- SECÇÃO 3 -->
+      <section id="identidadeVSconfusao" class="py-16 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <img
+            src="assets/image_3.jpeg"
+            class="rounded-xl shadow-lg w-full object-cover"
+          />
+
+          <div>
+            <h3 class="text-2xl font-semibold mb-6">
+              Identidade versus Confusão de Papéis
+            </h3>
+
+            <p class="text-lg leading-relaxed mb-4">
+              À medida que os filhos entram na adolescência, a dinâmica familiar
+              muda: os pais começam a “sair de cena”, enquanto os adolescentes
+              passam a assumir um papel mais ativo na sua autonomia e
+              identidade. Este período envolve transformações rápidas em vários
+              domínios — físico, cognitivo, emocional e social.
+            </p>
+
+            <p class="text-lg leading-relaxed mb-4">
+              Segundo <span class="font-semibold">Erik Erikson</span>, entre os
+              12 e os 18 anos os jovens atravessam a fase
+              <span class="font-semibold"
+                >“Identidade vs. Confusão de Papéis”</span
+              >. Nesta etapa, procuram responder à pergunta fundamental:
+            </p>
+
+            <blockquote
+              class="border-l-4 border-blue-500 pl-4 italic text-lg mb-4"
+            >
+              “Quem sou eu e como me enquadro no mundo que me rodeia?”
+            </blockquote>
+
+            <p class="text-lg leading-relaxed mb-4">
+              O desenvolvimento da identidade implica organizar o que sabem
+              sobre si, construir uma imagem pessoal coerente e significativa, e
+              garantir um sentimento de continuidade no tempo e nos diferentes
+              contextos sociais.
+            </p>
+
+            <p class="text-lg leading-relaxed">
+              Este processo de afirmação e autonomia frequentemente leva a
+              <span class="font-semibold">conflitos com os pais</span>, uma vez
+              que os adolescentes lutam por independência enquanto ainda
+              dependem emocionalmente e estruturalmente da família.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4ª SECÇÃO -->
+      <section id="CerebroDosAdolescentes" class="py-16 px-4 bg-blue-50">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div class="order-2 md:order-1">
+            <h3 class="text-2xl font-semibold mb-6">
+              Cérebro dos adolescentes
+            </h3>
+
+            <p class="text-lg leading-relaxed mb-4">
+              No início da adolescência, ocorrem alterações importantes no
+              <span class="font-semibold">sistema límbico</span>, parcialmente
+              desencadeadas pelas mudanças pubertárias e pela ação de
+              neurotransmissores como a dopamina e a serotonina. Estas
+              alterações tornam os adolescentes mais emocionais, mais sensíveis
+              ao stress e mais responsivos a recompensas.
+            </p>
+
+            <p class="text-lg leading-relaxed mb-4">
+              Como consequência, existe uma
+              <span class="font-semibold"
+                >maior vulnerabilidade a problemas de saúde mental</span
+              >, tais como ansiedade, tristeza, irritabilidade ou impulsividade,
+              devido à fácil excitabilidade emocional típica desta fase.
+            </p>
+
+            <p class="text-lg leading-relaxed mb-4">
+              Embora seja comum pensar que as hormonas da puberdade determinam o
+              humor adolescente, essa ligação é na realidade
+              <span class="font-semibold">fraca</span>. Ainda assim, estas
+              hormonas influenciam sistemas cerebrais responsáveis pela
+              excitação emocional, aumentando a sensibilidade ao contexto
+              social.
+            </p>
+
+            <p class="text-lg leading-relaxed">
+              Se o ambiente interpessoal do adolescente for fonte de
+              <span class="font-semibold">stress</span>, então as alterações
+              hormonais podem intensificar o impacto desses stressores,
+              amplificando respostas emocionais e comportamentais.
+            </p>
+          </div>
+
+          <img
+            src="assets/image_10.jpg"
+            class="order-1 md:order-2 rounded-xl shadow-lg w-full object-cover"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-900 text-gray-300 py-12">
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+        <!-- Logo e descrição -->
+        <div>
+          <h3 class="text-2xl font-bold text-white mb-4">Projeto + Emoções</h3>
+          <p class="text-gray-400">
+            Um projeto dedicado à promoção do bem-estar emocional de
+            adolescentes, com informações, estratégias parentais e contacto com
+            psicólogos especializados.
+          </p>
+        </div>
+
+        <!-- Links de navegação -->
+        <div>
+          <h4 class="text-xl font-semibold text-white mb-4">Navegação</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="index.html" class="hover:text-blue-500 transition"
+                >Início</a
+              >
+            </li>
+            <li>
+              <a href="quem-somos.html" class="hover:text-blue-500 transition"
+                >Quem Somos</a
+              >
+            </li>
+            <li>
+              <a href="adolescentes.html" class="hover:text-blue-500 transition"
+                >Adolescentes</a
+              >
+            </li>
+            <li>
+              <a href="estrategias.html" class="hover:text-blue-500 transition"
+                >Estratégias</a
+              >
+            </li>
+            <li>
+              <a href="contactos.html" class="hover:text-blue-500 transition"
+                >Contactos</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contactos e redes sociais -->
+        <div>
+          <h4 class="text-xl font-semibold text-white mb-4">
+            Contactos & Redes
+          </h4>
+          <p class="mb-4">
+            Email:
+            <a
+              href="mailto:info@projetoemoções.com"
+              class="hover:text-blue-500 transition"
+              >info@projetoemoções.com</a
+            >
+          </p>
+          <div class="flex space-x-4">
+            <a
+              href="#"
+              class="hover:text-blue-500 transition"
+              aria-label="Facebook"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22 12c0-5.522-4.478-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.463h-1.26c-1.243 0-1.63.772-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.987C18.343 21.128 22 16.991 22 12z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="hover:text-blue-500 transition"
+              aria-label="LinkedIn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M4.98 3.5C3.35 3.5 2 4.85 2 6.48c0 1.63 1.35 2.98 2.98 2.98 1.63 0 2.98-1.35 2.98-2.98C7.96 4.85 6.61 3.5 4.98 3.5zM2.4 21.5h5.16V9H2.4v12.5zM9.44 9v12.5h5.16v-6.98c0-3.55 4.41-3.84 4.41 0v6.98h5.16V13.5c0-6.63-7.16-6.38-9.57-3.12V9H9.44z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Direitos de autor -->
+      <div
+        class="mt-12 border-t border-gray-800 pt-6 text-center text-gray-500 text-sm"
+      >
+        &copy; 2025 Projeto + Emoções. Todos os direitos reservados.
+      </div>
+    </footer>
+    <!-- JS MENU MOBILE -->
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

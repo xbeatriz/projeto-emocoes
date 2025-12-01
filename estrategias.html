@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Estratégias</title>
+  </head>
+
+  <body class="bg-gray-100 min-h-screen flex flex-col">
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+      <div
+        class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <a
+          href="index.html"
+          class="flex items-center space-x-2 text-xl font-semibold"
+        >
+          <img
+            src="assets/icon.webp"
+            alt="Logo"
+            class="h-12 w-12 object-contain"
+          />
+          <span>Projeto + Emoções</span>
+        </a>
+
+        <!-- Botão mobile -->
+        <button id="menuBtn" class="md:hidden text-3xl">☰</button>
+
+        <!-- MENU DESKTOP -->
+        <ul class="hidden md:flex space-x-6 relative">
+          <!-- Quem Somos -->
+          <li class="group relative">
+            <a href="quem-somos.html" class="hover:text-blue-600">Quem Somos</a>
+            <ul
+              class="absolute hidden group-hover:block bg-white shadow-md px-4 py-2 space-y-2 w-40"
+            >
+              <li>
+                <a href="quem-somos.html#equipa" class="hover:text-blue-600"
+                  >Equipa</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- Adolescentes -->
+          <li class="group relative">
+            <a href="adolescentes.html" class="hover:text-blue-600"
+              >Adolescentes</a
+            >
+            <ul
+              class="absolute hidden group-hover:block bg-white shadow-md px-4 py-2 space-y-2 w-48"
+            >
+              <li>
+                <a
+                  href="adolescentes.html#ComoDefinirAadolescencia"
+                  class="hover:text-blue-600"
+                  >Como definir a adolescência</a
+                >
+              </li>
+              <li>
+                <a
+                  href="adolescentes.html#processosCognitivos"
+                  class="hover:text-blue-600"
+                  >Processos cognitivos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="adolescentes.html#identidadeVSconfusao"
+                  class="hover:text-blue-600"
+                  >Identidade vs Confusão</a
+                >
+              </li>
+              <li>
+                <a
+                  href="adolescentes.html#CerebroDosAdolescentes"
+                  class="hover:text-blue-600"
+                  >Cérebro dos adolescentes</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- Estratégias -->
+          <li class="group relative">
+            <a href="estrategias.html" class="hover:text-blue-600"
+              >Estratégias</a
+            >
+            <ul
+              class="absolute hidden group-hover:block bg-white shadow-md px-4 py-2 space-y-2 w-48"
+            >
+              <li>
+                <a
+                  href="estrategias.html#parentaisAdaptativas"
+                  class="hover:text-blue-600"
+                  >Parentais adaptativas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="estrategias.html#parentaisDesadaptativas"
+                  class="hover:text-blue-600"
+                  >Parentais desadaptativas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="estrategias.html#recomendadas"
+                  class="hover:text-blue-600"
+                  >Recomendadas</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- Contactos -->
+          <li class="group relative">
+            <a href="contactos.html" class="hover:text-blue-600">Contactos</a>
+            <ul
+              class="absolute hidden group-hover:block bg-white shadow-md px-4 py-2 space-y-2 w-48"
+            >
+              <li>
+                <a href="contactos.html#formulario" class="hover:text-blue-600"
+                  >Formulário</a
+                >
+              </li>
+              <li>
+                <a href="contactos.html#psicologos" class="hover:text-blue-600"
+                  >Psicólogos</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- MENU MOBILE -->
+      <ul
+        id="mobileMenu"
+        class="md:hidden hidden flex-col bg-white shadow-md p-4 space-y-4"
+      >
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="adolescentes.html">Adolescentes</a></li>
+        <li><a href="estrategias.html">Estratégias</a></li>
+        <li><a href="contactos.html">Contactos</a></li>
+      </ul>
+    </nav>
+    <main class="flex-grow pt-20">
+      <!-- 1ª SECÇÃO -->
+      <section id="parentaisAdaptativas" class="py-16 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <!-- IMAGEM -->
+          <img
+            src="assets/image_8.jpeg"
+            class="rounded-xl shadow-lg w-full object-cover"
+            alt="Estratégias parentais"
+          />
+
+          <!-- TEXTO -->
+          <div>
+            <h2 class="text-2xl font-semibold mb-6">
+              Estratégias / Práticas Parentais Mais Observadas e Adaptativas
+            </h2>
+
+            <p class="text-lg leading-relaxed mb-4">
+              O treino emocional envolve respostas parentais que validam,
+              orientam e ensinam o adolescente sobre as emoções que sente. Estas
+              estratégias ajudam a construir competência emocional e promovem
+              relações familiares saudáveis.
+            </p>
+
+            <ul class="space-y-4 text-lg leading-relaxed">
+              <li>
+                <span class="font-semibold text-blue-700"
+                  >• Consciência emocional:</span
+                >
+                O pai ou mãe percebe que o adolescente está frustrado ou
+                zangado, por exemplo, porque o irmão lhe tirou algo com que
+                estava a brincar.
+              </li>
+
+              <li>
+                <span class="font-semibold text-blue-700">• Validação:</span>
+                Reconhecer a emoção do adolescente, dizendo algo como: “Vejo que
+                estás muito zangado, é chato quando nos tiram algo com que
+                estamos a brincar.”
+              </li>
+
+              <li>
+                <span class="font-semibold text-blue-700"
+                  >• Nomeação de emoções:</span
+                >
+                Ajudar a colocar palavras na emoção sentida: “Isto que estás a
+                sentir é frustração.”
+              </li>
+
+              <li>
+                <span class="font-semibold text-blue-700"
+                  >• Suporte à regulação:</span
+                >
+                Ajudar a acalmar e resolver o problema: “Vamos respirar fundo.
+                Vamos tentar resolver a situação. Vamos tentar pedir o brinquedo
+                de volta.”
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2ª SECÇÃO -->
+      <section id="parentaisDesadaptativas" class="py-16 px-4 bg-blue-50">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <!-- TEXTO -->
+          <div class="order-2 md:order-1">
+            <h3 class="text-2xl font-semibold mb-6">
+              Estratégias / Práticas Parentais Desadaptativas
+            </h3>
+
+            <p class="text-lg leading-relaxed mb-4">
+              Algumas respostas parentais podem ser
+              <span class="font-semibold">desadaptativas</span>, pois ignoram,
+              invalidam ou punem a expressão emocional do adolescente,
+              dificultando o desenvolvimento emocional saudável.
+            </p>
+
+            <ul class="space-y-4 text-lg leading-relaxed">
+              <li>
+                <span class="font-semibold text-red-600">• Minimização:</span>
+                “Isso não foi nada, não chores por causa disso.”
+              </li>
+
+              <li>
+                <span class="font-semibold text-red-600">• Punição:</span>
+                Repreender ou castigar quando o adolescente demonstra emoções
+                intensas: “Vai para o quarto até parares de chorar.”
+              </li>
+
+              <li>
+                <span class="font-semibold text-red-600"
+                  >• Distração forçada:</span
+                >
+                Tentar desviar a atenção do adolescente quando sente emoções
+                intensas.
+              </li>
+
+              <li>
+                <span class="font-semibold text-red-600">• Reprovação:</span>
+                Criticar por sentir essas emoções: “Os meninos grandes não
+                choram.”
+              </li>
+            </ul>
+          </div>
+
+          <!-- IMAGEM -->
+          <img
+            src="assets/image_6.jpeg"
+            class="order-1 md:order-2 rounded-xl shadow-lg w-full object-cover"
+            alt="Estratégias desadaptativas"
+          />
+        </div>
+      </section>
+
+      <!-- 3ª SECÇÃO -->
+      <section id="recomendadas" class="py-16 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <!-- IMAGEM -->
+          <img
+            src="assets/image_7.jpeg"
+            class="rounded-xl shadow-lg w-full object-cover"
+            alt="Estratégias recomendadas"
+          />
+
+          <!-- TEXTO -->
+          <div>
+            <h3 class="text-2xl font-semibold mb-6">
+              Estratégias Recomendadas
+            </h3>
+
+            <p class="text-lg leading-relaxed mb-4">
+              O objetivo é ensinar os pais a substituir práticas desadaptativas
+              por práticas
+              <span class="font-semibold">adaptativas</span>. O treino emocional
+              é a estratégia central, onde os pais aprendem a:
+            </p>
+
+            <ul class="space-y-4 text-lg leading-relaxed">
+              <li>
+                <span class="font-semibold text-green-700"
+                  >• Ver emoções como oportunidades:</span
+                >
+                Reconhecer que cada emoção oferece uma chance de aprendizagem e
+                desenvolvimento.
+              </li>
+
+              <li>
+                <span class="font-semibold text-green-700"
+                  >• Validação incondicional:</span
+                >
+                Passar a mensagem de que todas as emoções são válidas e
+                permitidas, mas nem todos os comportamentos são aceitáveis (ex.:
+                estar zangado, mas não bater em ninguém).
+              </li>
+
+              <li>
+                <span class="font-semibold text-green-700"
+                  >• Suporte à resolução de problemas:</span
+                >
+                Não resolver o problema pelo adolescente, mas guiá-lo através do
+                processo de reconhecer, compreender e regular a emoção.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-900 text-gray-300 py-12">
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+        <!-- Logo e descrição -->
+        <div>
+          <h3 class="text-2xl font-bold text-white mb-4">Projeto + Emoções</h3>
+          <p class="text-gray-400">
+            Um projeto dedicado à promoção do bem-estar emocional de
+            adolescentes, com informações, estratégias parentais e contacto com
+            psicólogos especializados.
+          </p>
+        </div>
+
+        <!-- Links de navegação -->
+        <div>
+          <h4 class="text-xl font-semibold text-white mb-4">Navegação</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="index.html" class="hover:text-blue-500 transition"
+                >Início</a
+              >
+            </li>
+            <li>
+              <a href="quem-somos.html" class="hover:text-blue-500 transition"
+                >Quem Somos</a
+              >
+            </li>
+            <li>
+              <a href="adolescentes.html" class="hover:text-blue-500 transition"
+                >Adolescentes</a
+              >
+            </li>
+            <li>
+              <a href="estrategias.html" class="hover:text-blue-500 transition"
+                >Estratégias</a
+              >
+            </li>
+            <li>
+              <a href="contactos.html" class="hover:text-blue-500 transition"
+                >Contactos</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contactos e redes sociais -->
+        <div>
+          <h4 class="text-xl font-semibold text-white mb-4">
+            Contactos & Redes
+          </h4>
+          <p class="mb-4">
+            Email:
+            <a
+              href="mailto:info@projetoemoções.com"
+              class="hover:text-blue-500 transition"
+              >info@projetoemoções.com</a
+            >
+          </p>
+          <div class="flex space-x-4">
+            <a
+              href="#"
+              class="hover:text-blue-500 transition"
+              aria-label="Facebook"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22 12c0-5.522-4.478-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.463h-1.26c-1.243 0-1.63.772-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.987C18.343 21.128 22 16.991 22 12z"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="#"
+              class="hover:text-blue-500 transition"
+              aria-label="LinkedIn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M4.98 3.5C3.35 3.5 2 4.85 2 6.48c0 1.63 1.35 2.98 2.98 2.98 1.63 0 2.98-1.35 2.98-2.98C7.96 4.85 6.61 3.5 4.98 3.5zM2.4 21.5h5.16V9H2.4v12.5zM9.44 9v12.5h5.16v-6.98c0-3.55 4.41-3.84 4.41 0v6.98h5.16V13.5c0-6.63-7.16-6.38-9.57-3.12V9H9.44z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Direitos de autor -->
+      <div
+        class="mt-12 border-t border-gray-800 pt-6 text-center text-gray-500 text-sm"
+      >
+        &copy; 2025 Projeto + Emoções. Todos os direitos reservados.
+      </div>
+    </footer>
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
